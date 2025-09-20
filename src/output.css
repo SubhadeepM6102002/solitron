@@ -18,6 +18,7 @@
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-gray-900: oklch(21% 0.034 264.665);
+    --color-gray-950: oklch(13% 0.028 261.692);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -186,6 +187,9 @@
   }
 }
 @layer utilities {
+  .m-4 {
+    margin: calc(var(--spacing) * 4);
+  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -277,6 +281,9 @@
   .bg-gray-900 {
     background-color: var(--color-gray-900);
   }
+  .bg-gray-950 {
+    background-color: var(--color-gray-950);
+  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
@@ -286,8 +293,23 @@
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
+  .p-80 {
+    padding: calc(var(--spacing) * 80);
+  }
+  .p-100 {
+    padding: calc(var(--spacing) * 100);
+  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-60 {
+    padding-inline: calc(var(--spacing) * 60);
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
@@ -312,6 +334,9 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .bg-blend-darken {
+    background-blend-mode: darken;
   }
   .shadow-2xl {
     --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
